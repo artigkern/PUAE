@@ -14,7 +14,7 @@
 
 #include "options.h"
 #include "autoconf.h"
-#if defined(__GLIBC__) || defined(__APPLE__)
+#if defined(__APPLE__)
 #include <sys/sysctl.h>
 #endif
 #include "include/memory_uae.h"

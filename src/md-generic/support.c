@@ -13,7 +13,7 @@
 #include "options.h"
 #include "machdep/m68k.h"
 
-struct flag_struct regflags;
+extern struct flag_struct regflags;
 
 int machdep_init (void)
 {

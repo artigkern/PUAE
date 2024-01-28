@@ -144,7 +144,7 @@ PROGS = uae $(TOOLS)
 GENFILES = src/blit.h src/blitfunc.h $(TOOLGEN_SRCS) $(CPUGEN_SRCS) $(CPUGEN_HDRS) \
            src/linetoscr.c cpugen.stamp comptbl.stamp
 UAE_CFLAGS += -Wall -std=gnu99 -D_GNU_SOURCE -pipe -Wno-unused-variable -Wno-unused-but-set-variable -Wno-pointer-sign -Wno-unused-function -Wno-missing-braces
-UAE_LDFLAGS += -lz
+UAE_LDFLAGS += -lz -lm
 
 AR      = $(CROSS_COMPILE)ar
 RANLIB  = $(CROSS_COMPILE)ranlib

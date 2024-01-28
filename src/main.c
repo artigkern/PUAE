@@ -82,7 +82,7 @@ int config_changed;
 
 int pissoff_value = 15000 * CYCLE_UNIT;
 int pause_emulation;
-char start_path_data[MAX_DPATH];
+/* char start_path_data[MAX_DPATH]; */
 bool no_gui = 0, quit_to_gui = 0;
 bool cloanto_rom = 0;
 bool kickstart_rom = 1;

@@ -415,33 +415,33 @@ STATIC_INLINE void m68k_setpc_normal(uaecptr pc)
 	}
 }
 
-uae_u32 (*x_prefetch)(int);
-uae_u32 (*x_get_byte)(uaecptr addr);
-uae_u32 (*x_get_word)(uaecptr addr);
-uae_u32 (*x_get_long)(uaecptr addr);
-void (*x_put_byte)(uaecptr addr, uae_u32 v);
-void (*x_put_word)(uaecptr addr, uae_u32 v);
-void (*x_put_long)(uaecptr addr, uae_u32 v);
-uae_u32 (*x_next_iword)(void);
-uae_u32 (*x_next_ilong)(void);
-uae_u32 (*x_get_ilong)(int);
-uae_u32 (*x_get_iword)(int);
-uae_u32 (*x_get_ibyte)(int);
+extern uae_u32 (*x_prefetch)(int);
+extern uae_u32 (*x_get_byte)(uaecptr addr);
+extern uae_u32 (*x_get_word)(uaecptr addr);
+extern uae_u32 (*x_get_long)(uaecptr addr);
+extern void (*x_put_byte)(uaecptr addr, uae_u32 v);
+extern void (*x_put_word)(uaecptr addr, uae_u32 v);
+extern void (*x_put_long)(uaecptr addr, uae_u32 v);
+extern uae_u32 (*x_next_iword)(void);
+extern uae_u32 (*x_next_ilong)(void);
+extern uae_u32 (*x_get_ilong)(int);
+extern uae_u32 (*x_get_iword)(int);
+extern uae_u32 (*x_get_ibyte)(int);
 
-uae_u32 (*x_cp_get_byte)(uaecptr addr);
-uae_u32 (*x_cp_get_word)(uaecptr addr);
-uae_u32 (*x_cp_get_long)(uaecptr addr);
-void (*x_cp_put_byte)(uaecptr addr, uae_u32 v);
-void (*x_cp_put_word)(uaecptr addr, uae_u32 v);
-void (*x_cp_put_long)(uaecptr addr, uae_u32 v);
-uae_u32 (*x_cp_next_iword)(void);
-uae_u32 (*x_cp_next_ilong)(void);
+extern uae_u32 (*x_cp_get_byte)(uaecptr addr);
+extern uae_u32 (*x_cp_get_word)(uaecptr addr);
+extern uae_u32 (*x_cp_get_long)(uaecptr addr);
+extern void (*x_cp_put_byte)(uaecptr addr, uae_u32 v);
+extern void (*x_cp_put_word)(uaecptr addr, uae_u32 v);
+extern void (*x_cp_put_long)(uaecptr addr, uae_u32 v);
+extern uae_u32 (*x_cp_next_iword)(void);
+extern uae_u32 (*x_cp_next_ilong)(void);
 
-uae_u32 (REGPARAM3 *x_cp_get_disp_ea_020)(uae_u32 base, int idx) REGPARAM;
+extern uae_u32 (REGPARAM3 *x_cp_get_disp_ea_020)(uae_u32 base, int idx) REGPARAM;
 
-void (*x_do_cycles)(unsigned long);
-void (*x_do_cycles_pre)(unsigned long);
-void (*x_do_cycles_post)(unsigned long, uae_u32);
+extern void (*x_do_cycles)(unsigned long);
+extern void (*x_do_cycles_pre)(unsigned long);
+extern void (*x_do_cycles_post)(unsigned long, uae_u32);
 
 uae_u32 REGPARAM3 x_get_disp_ea_020 (uae_u32 base, int idx) REGPARAM;
 uae_u32 REGPARAM3 x_get_disp_ea_ce020 (uae_u32 base, int idx) REGPARAM;
