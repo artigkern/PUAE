@@ -284,7 +284,7 @@ src/tools/build68k:  src/tools/build68k.o src/tools/writelog.o
 	$(CC) -O0 -g0 $^ -o $@
 src/tools/genlinetoscr: src/tools/genlinetoscr.o
 	$(CC) -O0 -g0 $^ -o $@
-src/tools/gencomp: src/tools/gencomp.o src/tools/readcpu.o src/tools/missing.o src/tools/cpudefs.o src/tools/writelog.o
+src/tools/gencomp: src/gencomp.o src/tools/readcpu.o src/tools/missing.o src/tools/cpudefs.o src/tools/writelog.o
 	$(CC) -O0 -g0 $^ -o $@
 src/tools/gencpu: src/tools/gencpu.o src/tools/readcpu.o src/tools/cpudefs.o src/tools/missing.o src/tools/writelog.o
 	$(CC) -O0 -g0 $^ -o $@
